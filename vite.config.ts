@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Outside Lovable's sandbox (e.g. Netlify), build the SSR function for
+  // Netlify; the Lovable sandbox always overrides this with Cloudflare.
+  nitro: { preset: "netlify" },
 });
