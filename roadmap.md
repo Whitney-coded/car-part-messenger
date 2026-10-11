@@ -6,3 +6,5 @@
 - [x] Use the supplied business number +274 724 5593 for WhatsApp requests.
 - [ ] Confirm the supplied number is complete (it reads one digit short of a standard SA number).
 - [ ] Connect the project to GitHub from the editor's Plus (+) menu (needs the user in the browser).
+- [x] Add Netlify self-hosting config (netlify.toml, Nitro netlify preset) and verify SSR renders via the built function.
+- [ ] On Netlify: import the GitHub repo once it exists — build command, publish dir and env are already set by netlify.toml.
