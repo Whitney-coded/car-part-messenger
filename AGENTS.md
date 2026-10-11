@@ -12,3 +12,4 @@
 - Keep the sourcing experience on the index route and open WhatsApp Click-to-Chat in the browser; this simple contact flow needs no account or messaging server.
 - Keep WhatsApp message construction in a browser-safe utility with focused tests so contact formatting remains independently verifiable.
 - Define visual styles and semantic palette tokens in the global stylesheet so the page maintains a consistent glossy automotive treatment.
+- Self-hosting targets Netlify (`netlify.toml` + `nitro: { preset: "netlify" }`); the Lovable sandbox always forces its Cloudflare preset, so keep both configs intact — never "simplify" one into the other.

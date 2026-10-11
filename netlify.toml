@@ -1,0 +1,16 @@
+[build]
+  command = "bun run build"
+  publish = "dist"
+  functions = ".netlify/functions-internal"
+
+[build.environment]
+  NITRO_PRESET = "netlify"
+  BUN_VERSION = "1.3.3"
+  NODE_VERSION = "22"
+
+# Serve static assets from the filesystem first, then hand every other
+# path to the SSR function Nitro builds into .netlify/functions-internal/server.
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
